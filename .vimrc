@@ -107,10 +107,9 @@ set textwidth=80           " wrap at 80 chars by default
 set virtualedit=block      " allow virtual edit in visual block ..
 
 " ---------------------------------------------------------------------------
-"  " File Types
-"  "
-"  ---------------------------------------------------------------------------
-"
+"  File Types
+" ---------------------------------------------------------------------------
+
 au BufRead,BufNewFile *.rpdf       set ft=ruby
 au BufRead,BufNewFile *.rxls       set ft=ruby
 au BufRead,BufNewFile *.ru         set ft=ruby
@@ -126,6 +125,15 @@ au BufRead,BufNewFile *.ronn       set ft=mkd tw=80 ts=2 sw=2 expandtab
 
 au Filetype gitcommit set tw=68  spell
 au Filetype ruby      set tw=80  ts=2
+
+" ---------------------------------------------------------------------------
+"  Strip all trailing whitespace in file
+" ---------------------------------------------------------------------------
+
+function! StripWhitespace ()
+   exec ':%s/ \+$//gc'
+endfunction
+map ,s :call StripWhitespace ()<CR>
 
 " ----------------------------------------------------------------------------
 " My Changes"
