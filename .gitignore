@@ -1,0 +1,14 @@
+#Fist, ignore everything
+*
+
+#Don't ignore dotfiles
+!.*
+!.*/
+
+#Manually exclude everything else
+.DS_Store
+.Trash
+*.yml
+*history
+.rdebug_hist
+.viminfo
