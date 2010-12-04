@@ -1,6 +1,3 @@
-#Fist, ignore everything
-*
-
 #Don't ignore dotfiles
 !.*
 !.*/
