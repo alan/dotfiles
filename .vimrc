@@ -103,9 +103,29 @@ set tabstop=4
 set expandtab              " expand tabs to spaces
 set nosmarttab             " fuck tabs
 set formatoptions+=n       " support for numbered/bullet lists
-set textwidth=76           " wrap at 76 chars by default
+set textwidth=80           " wrap at 80 chars by default
 set virtualedit=block      " allow virtual edit in visual block ..
 
+" ---------------------------------------------------------------------------
+"  " File Types
+"  "
+"  ---------------------------------------------------------------------------
+"
+au BufRead,BufNewFile *.rpdf       set ft=ruby
+au BufRead,BufNewFile *.rxls       set ft=ruby
+au BufRead,BufNewFile *.ru         set ft=ruby
+au BufRead,BufNewFile *.god        set ft=ruby
+au BufRead,BufNewFile *.rtxt       set ft=html spell
+au BufRead,BufNewFile *.sql        set ft=pgsql
+au BufRead,BufNewFile *.rl         set ft=ragel
+au BufRead,BufNewFile *.svg        set ft=svg
+au BufRead,BufNewFile *.haml       set ft=haml
+au BufRead,BufNewFile *.md         set ft=mkd tw=80 ts=2 sw=2 expandtab
+au BufRead,BufNewFile *.markdown   set ft=mkd tw=80 ts=2 sw=2 expandtab
+au BufRead,BufNewFile *.ronn       set ft=mkd tw=80 ts=2 sw=2 expandtab
+
+au Filetype gitcommit set tw=68  spell
+au Filetype ruby      set tw=80  ts=2
 
 " ----------------------------------------------------------------------------
 " My Changes"
