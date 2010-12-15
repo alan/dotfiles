@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/jslint"]
 	path = .vim/bundle/jslint
 	url = git://github.com/hallettj/jslint.vim.git
+[submodule ".vim/bundle/unimpaired"]
+	path = .vim/bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
