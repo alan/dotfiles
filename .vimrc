@@ -122,6 +122,7 @@ au BufRead,BufNewFile *.haml       set ft=haml
 au BufRead,BufNewFile *.md         set ft=mkd tw=80 ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.markdown   set ft=mkd tw=80 ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.ronn       set ft=mkd tw=80 ts=2 sw=2 expandtab
+au BufRead,BufNewFile *.ejs        set ft=html
 
 au Filetype gitcommit set tw=68  spell
 au Filetype ruby      set tw=80  ts=2
