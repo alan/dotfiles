@@ -1,3 +1,19 @@
+" ----------------------------------------------------------------------------
+" My Changes"
+" ----------------------------------------------------------------------------
+filetype off
+
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+filetype plugin on
+filetype indent on
+
+inoremap <M-o>       <Esc>o
+inoremap <C-j>       <Down>
+
+let g:ragtag_global_maps = 1
+
 "From http://github.com/rtomayko/dotfiles/blob/rtomayko/.vimrc"
 
 " ---------------------------------------------------------------------------
@@ -122,7 +138,7 @@ au BufRead,BufNewFile *.haml       set ft=haml
 au BufRead,BufNewFile *.md         set ft=mkd tw=80 ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.markdown   set ft=mkd tw=80 ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.ronn       set ft=mkd tw=80 ts=2 sw=2 expandtab
-au BufRead,BufNewFile *.ejs        set ft=html
+au BufRead,BufNewFile *.ejs        set ft=eruby
 
 au Filetype gitcommit set tw=68  spell
 au Filetype ruby      set tw=80  ts=2
@@ -136,9 +152,4 @@ function! StripWhitespace ()
 endfunction
 map ,s :call StripWhitespace ()<CR>
 
-" ----------------------------------------------------------------------------
-" My Changes"
-" ----------------------------------------------------------------------------
 
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
