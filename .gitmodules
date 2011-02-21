@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/ragtag"]
 	path = .vim/bundle/ragtag
 	url = git://github.com/tpope/vim-ragtag.git
+[submodule ".bash/z"]
+	path = .bash/z
+	url = git://github.com/rupa/z.git
