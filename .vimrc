@@ -139,6 +139,8 @@ au BufRead,BufNewFile *.md         set ft=mkd tw=80 ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.markdown   set ft=mkd tw=80 ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.ronn       set ft=mkd tw=80 ts=2 sw=2 expandtab
 au BufRead,BufNewFile *.ejs        set ft=eruby
+au BufRead,BufNewFile *.pill       set ft=ruby
+
 
 au Filetype gitcommit set tw=68  spell
 au Filetype ruby      set tw=80  ts=2
