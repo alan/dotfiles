@@ -47,7 +47,7 @@ else
     MANPAGER="$PAGER"
 fi
 export PAGER MANPAGER
-export NODE_PATH=/usr/local/lib/node
+export NODE_PATH='/usr/local/lib/node:/usr/local/lib/node_modules'
 
 # from http://help.github.com/ssh-key-passphrases/
 ######################################################
