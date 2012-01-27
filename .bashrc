@@ -31,6 +31,7 @@ source ~/.git-aliases.sh
 export RUBYOPT="rubygems"
 export EDITOR='vim'
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/alan/.rvm/bin"
+export CC='/usr/bin/gcc-4.2'
 
 # complete hostnames from this file
 : ${HOSTFILE=~/.ssh/known_hosts}

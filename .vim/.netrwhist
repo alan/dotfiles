@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/alan/src/dotfiles'
 let g:netrw_dirhist_2='/Users/alan/src/leap-lite'
 let g:netrw_dirhist_3='/Users/alan/.rvm/gems/ruby-1.9.2-p180/gems/shoulda-2.11.3'
+let g:netrw_dirhist_4='/Users/alan/.rvm/gems/ruby-1.9.3-p0@example/bundler/gems/gocardless-ruby-37aa5fdf34f9'
